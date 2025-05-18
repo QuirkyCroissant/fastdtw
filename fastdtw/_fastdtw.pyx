@@ -11,11 +11,7 @@ from libcpp.vector cimport vector
 
 import numpy as np
 
-try:
-  from libc.math cimport INFINITY
-except:
-  from numpy.math cimport INFINITY
-
+from libc.math cimport INFINITY
 
 cdef struct LowHigh:
     int low, high
